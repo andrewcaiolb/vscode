@@ -1,0 +1,8 @@
+/workspaces/vscode/gestao-pessoas-sistema/backend/src/obj/Debug/net7.0/gestao-pessoas-sistema.csproj.AssemblyReference.cache
+/workspaces/vscode/gestao-pessoas-sistema/backend/src/obj/Debug/net7.0/gestao-pessoas-sistema.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/vscode/gestao-pessoas-sistema/backend/src/obj/Debug/net7.0/gestao-pessoas-sistema.AssemblyInfoInputs.cache
+/workspaces/vscode/gestao-pessoas-sistema/backend/src/obj/Debug/net7.0/gestao-pessoas-sistema.AssemblyInfo.cs
+/workspaces/vscode/gestao-pessoas-sistema/backend/src/obj/Debug/net7.0/gestao-pessoas-sistema.csproj.CoreCompileInputs.cache
+/workspaces/vscode/gestao-pessoas-sistema/backend/src/obj/Debug/net7.0/gestao-pessoas-sistema.MvcApplicationPartsAssemblyInfo.cs
+/workspaces/vscode/gestao-pessoas-sistema/backend/src/obj/Debug/net7.0/gestao-pessoas-sistema.MvcApplicationPartsAssemblyInfo.cache
+/workspaces/vscode/gestao-pessoas-sistema/backend/src/obj/Debug/net7.0/gestao-pessoas-sistema.sourcelink.json
