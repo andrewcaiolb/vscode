@@ -1,0 +1,30 @@
+using System.Collections.Generic;
+using System.Linq;
+
+namespace gestao_pessoas_sistema.backend.src.services
+{
+    public class PdiService
+    {
+        private List<Pdi> _pdis = new List<Pdi>();
+
+        public void AddPdi(Pdi pdi)
+        {
+            _pdis.Add(pdi);
+        }
+
+        public List<Pdi> GetAllPdis()
+        {
+            return _pdis.ToList();
+        }
+
+        public void UpdatePdi(int id, Pdi updatedPdi)
+        {
+            var existingPdi = _pdis.FirstOrDefault(p => p.Id == id);
+            if (existingPdi != null)
+            {
+                existingPdi.Goals = updatedPdi.Goals;
+                existingPdi.DevelopmentPlan = updatedPdi.DevelopmentPlan;
+            }
+        }
+    }
+}

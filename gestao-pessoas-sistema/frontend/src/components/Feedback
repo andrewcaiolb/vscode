@@ -1,0 +1,35 @@
+// frontend/src/components/Feedback/index.tsx
+
+import React, { useState } from 'react';
+
+const Feedback: React.FC = () => {
+    const [comment, setComment] = useState('');
+    const [feedbacks, setFeedbacks] = useState<string[]>([]);
+
+    const handleFeedbackSubmit = () => {
+        if (comment) {
+            setFeedbacks([...feedbacks, comment]);
+            setComment('');
+        }
+    };
+
+    return (
+        <div>
+            <h2>Feedback</h2>
+            <textarea
+                value={comment}
+                onChange={(e) => setComment(e.target.value)}
+                placeholder="Digite seu feedback aqui..."
+            />
+            <button onClick={handleFeedbackSubmit}>Enviar Feedback</button>
+            <h3>Lista de Feedbacks</h3>
+            <ul>
+                {feedbacks.map((feedback, index) => (
+                    <li key={index}>{feedback}</li>
+                ))}
+            </ul>
+        </div>
+    );
+};
+
+export default Feedback;

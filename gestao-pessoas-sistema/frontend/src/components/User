@@ -1,0 +1,22 @@
+// frontend/src/components/User/User.tsx
+
+import React from 'react';
+
+interface UserProps {
+    id: number;
+    name: string;
+    email: string;
+    role: string;
+}
+
+const User: React.FC<UserProps> = ({ id, name, email, role }) => {
+    return (
+        <div className="user-card">
+            <h3>{name}</h3>
+            <p>Email: {email}</p>
+            <p>Role: {role}</p>
+        </div>
+    );
+};
+
+export default User;

@@ -1,0 +1,25 @@
+{
+  "name": "gestao-pessoas-sistema-frontend",
+  "version": "1.0.0",
+  "description": "Frontend para o sistema de gestão de pessoas, com funcionalidades de feedback e PDI.",
+  "main": "src/App.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.2",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0"
+  },
+  "homepage": ".",
+  "license": "MIT"
+}
