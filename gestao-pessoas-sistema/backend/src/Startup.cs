@@ -36,11 +36,40 @@ namespace GestaoPessoasSistema
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Gestão de Pessoas API", Version = "v1" });
             });
         }
+        export interface Feedback {
+    id: number;
+    content: string;
+    userId: number;
+    createdAt: Date;
+}
+
+export interface PDI {
+    id: number;
+    goal: string;
+    actions: string;
+    deadline: Date;
+    userId: number;
+}
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
+            app.UseDeveloperExceptionPage();
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gestão de Pessoas API v1"));
+            }
+
+            app.UseHttpsRedirection();
+            app.UseRouting();
+            app.UseCors("AllowReactApp");
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+            endpoints.MapControllers();
+            });
+        }
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gestão de Pessoas API v1"));

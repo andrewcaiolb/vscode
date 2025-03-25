@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:5000/api', // URL base da API do backend
+    baseURL: 'https://localhost:5001/api', // Porta correta do backend
 });
 
 // Funções para interagir com a API de Feedbacks
